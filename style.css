@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background for better readability */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White background for content area */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Larger heading size */
+}
+
+.form {
+    display: flex; /* Arrange form elements horizontally */
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex: 1 1 200px; /* Ensure each group has minimum width */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels for better prominence */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#expenses-container {
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.expense-table {
+    margin-bottom: 20px; /* Spacing between tables */
+}
+
+.delete-btn {
+    background-color: #f00; /* Red background for delete button */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d00; /* Darker red on hover */
+}

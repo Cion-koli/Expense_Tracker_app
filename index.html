@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense-form" class="form">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="bills">Bills</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div id="expenses-container" class="expenses">
+            <h2>Monthly Expenses</h2>
+            <table id="monthly-expenses" class="expense-table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h2>Daily Expenses</h2>
+            <table id="daily-expenses" class="expense-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
